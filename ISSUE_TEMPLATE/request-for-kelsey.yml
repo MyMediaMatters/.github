@@ -1,0 +1,45 @@
+name: Request for Kelsey
+description: Something you need Kelsey to do, decide or approve (coding, access, content, client questions).
+title: "[Request] "
+assignees:
+  - kelsey-wagner
+projects:
+  - "MyMediaMatters/1"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This goes straight to Kelsey and lands in Backlog on the MMM Work board.
+        Do not paste passwords, API keys or tokens here. Say where they live instead.
+  - type: textarea
+    id: ask
+    attributes:
+      label: What do you need from Kelsey?
+      description: One request per issue. Say what you need done, decided or approved.
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Which client or project?
+      placeholder: e.g. American Roofing, ClearSite, Danny's BBQ
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: How soon?
+      options:
+        - Today
+        - This week
+        - When you can
+    validations:
+      required: true
+  - type: textarea
+    id: blocked
+    attributes:
+      label: What is blocked until this is done?
+      description: Optional. Helps Kelsey prioritize.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Links, error messages or screenshots
+      description: Optional. Paste text and drag in images.
